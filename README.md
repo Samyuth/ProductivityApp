@@ -26,3 +26,8 @@ To test in dev run:
 
 To run a production build run:
 ```npm start```
+
+## Developer Resources
+
+Documentation for sveltekit: https://kit.svelte.dev/docs/introduction
+Default sveltekit template: https://github.com/sveltejs/kit/tree/master/packages/create-svelte/templates/default

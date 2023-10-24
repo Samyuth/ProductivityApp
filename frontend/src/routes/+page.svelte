@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
 <main>
 	<div class="container">
 		<textarea class="scratch-pad"></textarea>
