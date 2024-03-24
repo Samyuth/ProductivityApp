@@ -1,8 +1,11 @@
 const express = require('express');
 const fs = require('fs');
-
+const cors=require("cors");
 
 const app = express();
+
+app.use(cors());
+app.use(express.json())
 
 app.get("/", (req, res) => {
     fs.readFile("test.txt", 'utf8', (err, data) => {
@@ -11,7 +14,7 @@ app.get("/", (req, res) => {
             return;
         }
 
-        res.send(data);
+        res.json({"text": data});
     });
 })
 
